@@ -4,3 +4,4 @@ artifacts
 cache
 local
 merkle_build_tests
+.env
