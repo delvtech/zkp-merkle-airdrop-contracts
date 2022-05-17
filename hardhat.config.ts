@@ -16,5 +16,13 @@ export default {
   },
   mocha: {
     timeout: 200000
-  }
+  },
+  networks: {
+    hardhat: {
+      forking: {
+        url: `https://eth-mainnet.alchemyapi.io/v2/${process.env.ALCHEMY_MAINNET_API_KEY}`,
+        blockNumber: 11853372,
+      },
+    },
+  },
 };
